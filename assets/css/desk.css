@@ -1,0 +1,167 @@
+body {
+    font-family: monospace;
+    background-image: url(../img/wallUbuntu.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.pt-5 {
+    position: absolute;
+    padding-top: 5px;
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+.ml-60 {
+    margin-left: 60px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50px;
+    height: 100vh;
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.first{
+    padding-top: 10px;
+}
+
+.desktop {
+    position: absolute;
+    top:0px;
+    left:70px;
+    right: 0px;
+    bottom: 0px;
+    overflow: hidden;
+}
+
+.terminal {
+    position: absolute;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    min-width: 300px;
+    min-height: 300px;
+    overflow: hidden;
+    resize: both;
+}
+
+.terminal.maximaze {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.terminal > .bar {
+    background-color:#664d80;
+    position: absolute;
+    padding-top: 0px;
+    height: 20px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.terminal > .bar ul {
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    margin: 0px;
+}
+
+.contentTerminal{
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.getText {
+    padding-top: 20px;
+    color: seashell;
+}
+
+.getInfo {
+    padding-top: 10px;
+    color: seashell;
+}
+
+.getInput {
+    padding-top: 10px;
+    color: seashell;
+}
+
+.boxInput {
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    width: 50%;
+    color: seashell;
+}
+
+.pathname {
+    color:mediumslateblue;
+}
+
+.pcname {
+    color: mediumseagreen;
+}
+
+ul>li{
+    display: inline-block;
+    padding: 3px;
+}
+
+.button {
+    width: 10px;
+}
+
+.icon-menu {
+    width: 50px;
+    padding-bottom: 10px;
+}
+
+.down {
+    padding-top: 300px;
+}
+
+/*scrollbar style*/
+::-webkit-scrollbar
+{
+  width: 12px;  /* for vertical scrollbars */
+  height: 12px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+  background: rgba(0, 0, 0, 0.8);
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: rgba(80, 80, 80, 0.5);
+  border-radius: 10px;
+}
+
+
+
+
+
