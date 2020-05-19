@@ -8,18 +8,19 @@
 </head>
 <body>
     <nav>
-        <img class="icon-menu first" src="assets/img/mozilla.svg"/>
-        <img class="icon-menu" src="assets/img/multimedia.svg"/>
-        <img class="icon-menu" src="assets/img/analytics.svg"/>
-        <img class="icon-menu" src="assets/img/business.svg"/>
-        <img class="icon-menu" src="assets/img/social-media.svg"/>
-        <img class="icon-menu openTerminal" src="assets/img/computer.svg"/>
-        <img class="icon-menu down" src="assets/img/signs.svg"/>
+        <div class="app-icon-terminal">
+            <img src="assets/img/interface.png"/>
+        </div>
+        <div class="app-icon-file">
+            <img src="assets/img/multimedia.svg"/>
+        </div>
     </nav>
 
     <div class="desktop">
-        <div class="terminal">
+
+        <div class="terminal window">
             <div class="bar">
+                <center><span class="pathname"></span></center>
                 <ul>
                     <li><img class="button yellow" src="assets/img/yellow.png"/></li>
                     <li><img class="button green" src="assets/img/green.png"/></li>
@@ -31,6 +32,44 @@
                 <div class="getText ml-20">Hello Jeremy! This is a mini terminal in Linux, let's do it.</div>
                 <div class="getInput ml-20"><span class="pcname">jeremy@linux-desktop</span>:<span class="pathname"></span>$<input class="boxInput ml-10"></div>  
             </div>
+        </div>
+
+        <div class="uploadFileToServer window">
+            <div class="bar">
+                <center><span>Upload File</span></center>
+                <ul>
+                    <li><img class="button yellow" src="assets/img/yellow.png"/></li>
+                    <li><img class="button green" src="assets/img/green.png"/></li>
+                    <li><img class="button red" src="assets/img/red.png"/></li>
+                </ul>
+            </div>
+
+            <div class="contentUpload">
+                <form method="POST" class="visualizedFile" enctype="multipart/form-data">
+                    <input type="file" name="fileToUpload" class="buttonFile">
+                    <input type="submit" name="submit" class="buttonSubmit">
+                </form>
+                
+                
+                <div class="loading_bar">
+                    <div class="loadValue">0%</div>
+                </div>
+
+                <div class="status_bar">
+                    
+                </div>
+            </div>
+
+        </div>
+
+        <div class="icon-terminal">
+            <img src="assets/img/ui.svg"/>
+            Terminal
+        </div>
+
+        <div class="icon-server">
+            <center><img style="width: 50px;" src="assets/img/server.svg"/></center>
+            UploadFile
         </div>
     </div>
 
