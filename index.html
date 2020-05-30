@@ -14,6 +14,9 @@
         <div class="app-icon-file">
             <img src="assets/img/multimedia.svg"/>
         </div>
+        <div class="app-icon-setting">
+            <img src="assets/img/settings.svg"/>
+        </div>
     </nav>
 
     <div class="desktop">
@@ -28,7 +31,7 @@
                 </ul>
             </div>
 
-            <div class="contentTerminal">
+            <div class="contentTerminal subwindow">
                 <div class="getText ml-20">Hello Jeremy! This is a mini terminal in Linux, let's do it.</div>
                 <div class="getInput ml-20"><span class="pcname">jeremy@linux-desktop</span>:<span class="pathname"></span>$<input class="boxInput ml-10"></div>  
             </div>
@@ -44,7 +47,7 @@
                 </ul>
             </div>
 
-            <div class="contentUpload">
+            <div class="contentUpload subwindow">
                 <form method="POST" class="visualizedFile" enctype="multipart/form-data">
                     <input type="file" name="fileToUpload" class="buttonFile">
                     <input type="submit" name="submit" class="buttonSubmit">
@@ -62,6 +65,21 @@
 
         </div>
 
+        <div class="infoServer window">
+            <div class="bar">
+                <center>Information Server</center>
+                <ul>
+                    <li><img class="button yellow" src="assets/img/yellow.png"/></li>
+                    <li><img class="button green" src="assets/img/green.png"/></li>
+                    <li><img class="button red" src="assets/img/red.png"/></li>
+                </ul>
+            </div>
+
+            <div class="contentInfoServer subwindow">
+
+            </div>
+        </div>
+
         <div class="icon-terminal">
             <img src="assets/img/ui.svg"/>
             Terminal
@@ -71,10 +89,22 @@
             <center><img style="width: 50px;" src="assets/img/server.svg"/></center>
             UploadFile
         </div>
+
+        <div class="icon-infoServer">
+            <center><img style="width: 50px;" src="assets/img/information.svg"/></center>
+            InfoServer
+        </div>
     </div>
 
+    <!--JQuery Framework-->
     <script src = "assets/plugins/jquery/jquery-3.5.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src = "assets/js/main.js"></script>
+    
+    <!--Own Made Functions-->
+    <script src = "assets/js/terminal.js"></script>
+    <script src = "assets/js/infoServer.js"></script>
+    <script src= "assets/js/uploader.js"></script>
+    <script src ="assets/js/commonAnimation.js"></script>
+    
 </body>
 </html>
